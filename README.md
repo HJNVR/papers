@@ -4,7 +4,9 @@
 1. Pre-training of Deep Bidirectional Transformers for Language Understanding \
 https://arxiv.org/pdf/1810.04805
     - https://github.com/google-research/bert
-    - Algorithm: WordPiece Tokenization
+    - Algorithm: 
+        - WordPiece Tokenization
+        - Byte-Pair Encoding      
 2. Attention Is All You Need\
 https://arxiv.org/pdf/1706.03762
 
