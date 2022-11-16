@@ -1,6 +1,8 @@
 # papers
 
 ## BERT
+codes: ./Bert/fine_tune_bert.ipynb
+
 1. Pre-training of Deep Bidirectional Transformers for Language Understanding \
 https://arxiv.org/pdf/1810.04805
     - https://github.com/google-research/bert
