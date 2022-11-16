@@ -4,13 +4,13 @@
 codes: ./Bert/fine_tune_bert.ipynb
 
 1. Pre-training of Deep Bidirectional Transformers for Language Understanding \
-https://arxiv.org/pdf/1810.04805
+(https://arxiv.org/abs/1810.04805)
     - https://github.com/google-research/bert
     - Algorithm: 
         - WordPiece Tokenization
         - Byte-Pair Encoding      
 2. Attention Is All You Need\
-https://arxiv.org/pdf/1706.03762
+(https://arxiv.org/abs/1706.03762)
 
 ## XLM
 1. LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding (2021) \
