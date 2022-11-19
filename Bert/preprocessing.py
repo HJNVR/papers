@@ -2,6 +2,10 @@ import re
 import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from nltk.stem import WordNetLemmatizer
+porter_stemmer = PorterStemmer()
+wordnet_lemmatizer = WordNetLemmatizer()
 
 def clean_html(text):
     #html = re.compile('<.*?>')#regex
@@ -42,12 +46,19 @@ def remove_underscore(text):
     text = re.sub('([_]+)', "", text)
     return text
 
+def stemming(text):
+    stem_text = ''.join([porter_stemmer.stem(word) for word in text])
+    return stem_text
+
+def lemmatizer(text):
+    lemm_text = ''.join([wordnet_lemmatizer.lemmatize(word) for word in text])
+    return lemm_text
 
 if __name__ == "__main__":
-    text = "This is a link <https://no?> it is"
+    text = "This is a link <https://no?> it is. This movie deserves the 10 I'm giving it.<br /><br />But it's not the 10 that you'd give to movies like 'The Godfather"
     print(clean_html(text))
     print(non_ascii('this is %1 Ñ'))
     print(email_address('hj96998@gmail sd'))
-    print(punct('s.sdfa/asdfgm.sdf?asd,'))
+    print(punct(text))
     print(removeStopWords("this is not a good_ _thing"))
     print(remove_underscore("this is not a good_ _thing"))
